@@ -77,11 +77,34 @@ go
 --1. Criar a tabela Autor_Livro do relacionamento N para N, utilizando uma instrução SQL sem especificar as (chaves) restrições de integridade. Depois altere a tabela de forma a incluir a chave primária nomeando a restrição para PK_AutorLivro e as chaves estrangeiras, nomeando as restrições para FK_Autor e FK_Livro
 ----------------------------------
 Create Table Autor_Livro (
-	cd_AutorLivro int not null,
+	cd_Autor int,
+	cd_Livro int
 )
 go
 Alter Table Autor_Livro
-	Add Primary Key (AutorLivro)
+	Add Constraint PK_AutorLivro 
+	Primary Key(cd_Autor, cd_Livro)
 go
 Alter Table Autor_Livro
-	Add Foreign Key 
+	Add Constraint FK_Autor
+	Foreign Key (cd_Autor)
+	References Autor (cd_Autor)
+go
+Alter table Autor_Livro
+	Add Constraint FK_Livro
+	Foreign Key (cd_Livro)
+	References Livro (cd_Livro)
+go
+Insert into Autor_Livro
+	Values	(1,3),
+			(1,2),
+			(2,1),
+			(3,4),
+			(4,2),
+			(4,3)
+go
+----------------------------------
+--Crie uma instrução para adicionar a coluna qt_Edicao na tabela Livro, essa coluna deve aceitar números inferior a 20. Depois escreva outra instrução para remover a coluna qt_Edicao da tabela Livro
+----------------------------------
+Alter table Livro
+	Add qt_Edicao 
