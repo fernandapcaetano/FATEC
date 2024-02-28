@@ -104,7 +104,21 @@ Insert into Autor_Livro
 			(4,3)
 go
 ----------------------------------
---Crie uma instrução para adicionar a coluna qt_Edicao na tabela Livro, essa coluna deve aceitar números inferior a 20. Depois escreva outra instrução para remover a coluna qt_Edicao da tabela Livro
+--2. Crie uma instrução para adicionar a coluna qt_Edicao na tabela Livro, essa coluna deve aceitar números inferior a 20. Depois escreva outra instrução para remover a coluna qt_Edicao da tabela Livro
 ----------------------------------
 Alter table Livro
-	Add qt_Edicao 
+	Add qt_Edicao Int
+go
+Alter table Livro
+Add Constraint chk_Livro_qt_Edicao
+	Check (qt_Edicao < 20)
+go
+Alter Table Livro
+	Drop Constraint chk_Livro_qt_Edicao
+go
+Alter Table Livro
+	Drop Column qt_Edicao
+go
+----------------------------------
+--3. Renomear a coluna vl_Livro para vl_VolumeLivro
+----------------------------------
