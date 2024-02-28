@@ -72,14 +72,16 @@ go
 ----------------------------------
 --Atividade de Banco de Dados II--
 ----------------------------------
+----------------------------------
+----------------------------------
+--1. Criar a tabela Autor_Livro do relacionamento N para N, utilizando uma instrução SQL sem especificar as (chaves) restrições de integridade. Depois altere a tabela de forma a incluir a chave primária nomeando a restrição para PK_AutorLivro e as chaves estrangeiras, nomeando as restrições para FK_Autor e FK_Livro
+----------------------------------
 Create Table Autor_Livro (
 	cd_AutorLivro int not null,
-
 )
 go
 Alter Table Autor_Livro
-	Add Primary Key (PK_AutorLivro)
-	Add Foreign Key (FK_Autor) 
-	REFERENCES Autor
+	Add Primary Key (AutorLivro)
 go
-Alter Table Aut
+Alter Table Autor_Livro
+	Add Foreign Key 
