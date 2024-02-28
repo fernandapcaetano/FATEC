@@ -128,3 +128,41 @@ go
 ----------------------------------
 --4. Criar um comando para excluir da tabela Livros aqueles que possuem o código maior ou igual a 2, que possuem o preço maior que 50,00 e já foram lançados.
 ----------------------------------
+Delete from Livro
+	Where cd_Livro >= 2
+	And vl_Livro > 50.00
+	And dt_Lancamento Is Not Null;
+go
+----------------------------------
+--5. Atualizar para zero o valor de todos o Livros onde a data de lançamento for nula ou onde seu valor atual for inferior a 5,00.
+----------------------------------
+Update Livro
+	SET vl_VolumeLivro = 0
+	Where dt_Lancamento is not null 
+	Or vl_VolumeLivro < 5.00 
+go
+----------------------------------
+--6. Apresente o comando para gerar uma listagem dos códigos dos livros que possuem ao menos dois autores
+----------------------------------
+Select cd_Livro from Autor_Livro
+	Group By cd_Livro
+	Having Count(cd_Autor) >= 2
+go
+----------------------------------
+--7. Escreva o comando para apresentar o preço médio dos livros por código de editora. Considere somente aqueles que custam mais de 45,00.
+----------------------------------
+Select cd_Editora , AVG(vl_VolumeLivro) as PrecoMedio
+	From Livro
+	Where vl_VolumeLivro > 45.00
+	Group By cd_Editora
+go
+----------------------------------
+--8. Apresente o código do livro, o nome do livro, o nome do assunto de cada livro e o valor do livro, onde o valor seja diferente de zero e o assunto igual a “D” ou “A”
+----------------------------------
+Select L.cd_Livro, L.nm_Titulo, A.ds_Assunto, L.vl_VolumeLivro
+	From Livro L
+	Join Assunto A On L.sg_Assunto =
+		A.sg_Assunto
+	Where L.vl_VolumeLivro != 0 And
+	(A.sg_Assunto = 'D' Or A.sg_Assunto = 'A')
+go
