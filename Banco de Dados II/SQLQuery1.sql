@@ -122,3 +122,9 @@ go
 ----------------------------------
 --3. Renomear a coluna vl_Livro para vl_VolumeLivro
 ----------------------------------
+EXEC sp_rename 'Livro.vl_Livro',
+'vl_VolumeLivro', 'COLUMN'
+go
+----------------------------------
+--4. Criar um comando para excluir da tabela Livros aqueles que possuem o código maior ou igual a 2, que possuem o preço maior que 50,00 e já foram lançados.
+----------------------------------
