@@ -394,8 +394,17 @@ go
 ----------------------------------
 --8. Mostre o código do vendedor e o menor valor do imóvel dele no cadastro. Exclua da busca os valores de imóveis inferiores a 10 mil.
 ----------------------------------
-Select	V.cd_Vendedor,
-		I.vl_Imovel
-From	Vendedor as V,
-		Imovel as I
-Where	
+Select		cd_vendedor, min(vl_imovel) as minimo 
+From		imovel 
+Where		vl_imovel > 100000
+Group by	cd_vendedor	
+go
+----------------------------------
+--9. Mostre o código e o nome do comprador e a média do valor das ofertas e o número de ofertas deste comprador.
+----------------------------------
+Select	C.cd_comprador, C.nm_comprador, 
+		AVG(O.vl_oferta) media, count(*) qtde_oferta 
+From	Comprador C inner join Oferta O
+		on C.cd_comprador = O.cd_comprador
+Group by C.cd_comprador, C.nm_comprador
+go
