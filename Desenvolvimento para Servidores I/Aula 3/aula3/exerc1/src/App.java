@@ -16,7 +16,7 @@ public class App {
         Cachorro gael = new Cachorro("Gael Baraçal Russo", "Shitzu");
         gael.latir();
         gael.mostrarRaca();
-        Cachorro tuty = new Cachorro("Tuty", "Vira-lata");
+        Cachorro tuty = new Cachorro("Tuti", "Vira-lata");
         tuty.latir();
         tuty.mostrarRaca();
 
