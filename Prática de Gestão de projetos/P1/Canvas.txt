@@ -1,0 +1,45 @@
+REQUISITOS
+Localização e Espaço
+	Seleção de terreno
+	Avaliação de solo
+	Acesso e segurança
+Recursos
+	Financiamento:  Obter recursos financeiros para cobrir custos iniciais e operacionais, seja através de doações, patrocínios ou fundos comunitários.
+	Ferramentas e equipamentos
+	Sementes e mudas
+Planejamento e organização
+	Engajamento comunitário
+	Metas da horta
+	Planejamento do espaço
+	Compostagem
+	Irrigaçao
+
+FATORES EXTERNOS
+Moradores locais
+Departamentos de Saúde e Assistência Social
+Ambiente
+
+EQUIPE
+Coordenadores do Projeto
+Especialistas em Horticultura e Agricultura
+Voluntários da Comunidade
+Profissionais de Construção e Manutenção
+Parceiros Comunitários e Institucionais
+
+PREMISSAS
+Terreno Apropriado
+Materiais de Plantio
+Acesso a Água
+Participação Ativa da Comunidade
+
+GRUPO DE ENTREGAS
+1-  Compreender as necessidades da comunidade, avaliar a disponibilidade de recursos, e identificar potenciais desafios e oportunidades.
+2- Definir especificações detalhadas do projeto, incluindo design da horta, escolha de culturas, infraestrutura necessária, e requisitos de mão de obra e financeiros.
+3-  Implementar o design e construir a infraestrutura da horta, preparar o solo, plantar as culturas selecionadas e estabelecer procedimentos de manutenção.
+4- Iniciar a operação da horta, monitorar o desenvolvimento das plantas, ajustar procedimentos conforme necessário e preparar para a colheita e distribuição dos produtos.
+
+RISCOS
+Condições Climáticas Adversas
+Pragas e Doenças
+Variações no Preço de Insumos
+Disponibilidade de Voluntários
