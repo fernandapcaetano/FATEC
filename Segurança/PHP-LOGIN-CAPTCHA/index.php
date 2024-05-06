@@ -6,6 +6,19 @@
         if(empty($_POST['g-recaptcha-response'])){
             echo nl2br("Resolva o captcha");
         }
+        if(isset($_POST['g-recaptcha-response']) and !empty($_POST['g-recaptcha-response'])){
+
+            $secret = "6LeeedMpAAAAACoNyYUCQudXRpDI_w7UOdYiZz00";
+            $response = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='. $secret .'&response='. $_POST['g-recaptcha-response']);
+            $data=json_decode($response);
+
+            if($data->success){
+                echo "Dados enviados";
+            } else{
+                echo "Tente novamente";
+            }
+
+        }
     }
 ?>
 

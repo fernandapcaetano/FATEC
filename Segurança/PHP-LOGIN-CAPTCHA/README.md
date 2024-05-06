@@ -9,3 +9,4 @@ JS Script: https://www.google.com/recaptcha/api.js
 Adicionando a caixa: `<div class="g-recaptcha" data-sitekey="6LeeedMpAAAAAC__AggOTm77PL63HlWrh4Ap9NDa"></div>`
 
 ## 3 - Validando a resposta do usuário
+Resposta do usuario: `https://www.google.com/recaptcha/api/siteverify?secret='. $secret .'$response='. $_POST['g-recaptcha-response']`
