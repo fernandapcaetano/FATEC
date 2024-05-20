@@ -1,0 +1,62 @@
+server:
+    port: 8080
+
+spring:
+    datasource:
+     platform: postgres
+     url: jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/postgres
+     username: postgres.iymoqeyritgeteaqxcml
+     password: Filomen@14!!!!!!%%%
+     driverClassName: org.postgrrsql.Driver
+     Initialization-mode: always
+     initialize: true
+     schema: classpath:/schema-postgresql.sql
+
+jpa:
+    hibernate:
+    ddl-auto: create-drop
+
+# db.url=jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/postgres?user=postgres.iymoqeyritgeteaqxcml&password=Filomen@14!!!!!!%%%
+# db.username=postgres.iymoqeyritgeteaqxcml
+# db.password=Filomen@14!!!!!!%%%
+
+# spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+# spring.jpa.hibernate.ddl-auto=none
+# spring.jpa.hibernate.show-sql=true
+# spring.datasource.url=jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/postgres?user=postgres.iymoqeyritgeteaqxcml&password=Filomen@14!!!!!!%%%
+# spring.datasource.driver-class-name=org.postgresql.Driver
+# spring.datasource.username=postgres.iymoqeyritgeteaqxcml
+# spring.datasource.password=Filomen@14!!!!!!%%%
+
+
+# spring.datasource.initialization-mode=always
+# spring.datasource.initialize=true
+# spring.datasource.schema=classpath:/schema-postgresql.sql
+# spring.datasource.continue-on-error=true
+
+# ===============================
+# = DATA SOURCE
+# ===============================
+# Set here configurations for the database connection
+# spring.datasource.url=jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/postgres?user=postgres.iymoqeyritgeteaqxcml&password=Filomen@14!!!!!!%%%
+# spring.datasource.username=postgres.iymoqeyritgeteaqxcml
+# spring.datasource.password=Filomen@14!!!!!!%%%
+# spring.datasource.driver-class-name=org.postgresql.Driver
+# # Keep the connection alive if idle for a long time (needed in production)
+# spring.datasource.testWhileIdle=true
+# spring.datasource.validationQuery=SELECT 1
+# # ===============================
+# # = JPA / HIBERNATE
+# # ===============================
+# # Show or not log for each sql query
+# spring.jpa.show-sql=true
+# # Hibernate ddl auto (create, create-drop, update): with "create-drop" the database
+# # schema will be automatically created afresh for every start of application
+# spring.jpa.hibernate.ddl-auto=create-drop
+
+# # Naming strategy
+# spring.jpa.hibernate.naming.implicit-strategy=org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+# spring.jpa.hibernate.naming.physical-strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+# # Allows Hibernate to generate SQL optimized for a particular DBMS
+# spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
