@@ -43,7 +43,19 @@ public class App {
         /**
          * Exercicio 3
         */
+        Complexo numero1 = new Complexo(3, 4);
+         Complexo numero2 = new Complexo(1, -2);
 
+         System.out.println(numero1);
+         System.out.println(numero2);
+
+         //modulos
+         System.out.println(numero1.modulo());
+         System.out.println(numero2.modulo());
+
+         //argumento principal
+         System.out.println(numero1.argumentoPrincipal());
+         System.out.println(numero2.argumentoPrincipal());
         /**
          * Exercicio 4
         */
