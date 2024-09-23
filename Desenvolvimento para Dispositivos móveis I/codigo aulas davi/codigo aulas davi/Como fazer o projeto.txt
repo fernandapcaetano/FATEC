@@ -1,0 +1,6 @@
+CTRL + SHIF + P
+Flutter: new project
+Application
+Selecionar uma pasta
+Dar nome ao projeto
+Pronto
